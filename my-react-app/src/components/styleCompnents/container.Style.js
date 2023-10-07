@@ -33,7 +33,7 @@ export const ImageContainer = styled.div `
 export const Column = styled.div `
     display: flex;
     flex-direction: column;
-    gap:${(props) => props.home ? '0px' : '45px'};
+    gap:${(props) => props.nogap ? '0px' : '45px'};
     /* align-items: center; */
     justify-content: center;
     flex-wrap: wrap;
@@ -69,7 +69,7 @@ export const Row = styled.div `
     /* justify-content: space-between; */
     justify-content: ${(props) => props.even ? 'space-evenly' :  'space-between'};;
     ${props => props.small && css`
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -186,10 +186,13 @@ export const QuoteBox = styled.div`
     align-items: center; /* Center vertically */
     height: 100vh;
     text-align:center;
-    // ${props => props.small && css`
-    // @media (max-width: 768px) {
-    //     width:auto;
-    // }
+    ${props => props.small && css`
+    @media (max-width: 768px) {
+        height: auto;
+        font-size:32px;
+        padding:32px;
+        margin:12px
+    }
   `}
 
 `
@@ -228,4 +231,5 @@ export const CardBox = styled.div`
 export const FancyPic = styled.div`
     display: flex;
     flex-direction: column;  
+  //  margin-top:48px;
 `

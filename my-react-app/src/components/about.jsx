@@ -3,12 +3,13 @@
 import React from 'react';
 import { Box, Column, Row,FeedbackBox, InfoBox, FancyPic } from "./styleCompnents/container.Style"
 import { Title, SubTitle, SmallInfo, SpecialText } from "./styleCompnents/text.Style"
-// import BigPic from "./Images/Image5.svg"
-// import Music from "./Images/music.jpg"
-// import Movies from "./Images/movies.jpg"
-// import Gym from "./Images/gym.jpeg"
-// import Cake from "./Images/cake.jpeg"
-// import Nature from "./Images/nature.jpeg"
+import BigPic from "../Images/Me.jpg"
+import Music from "../Images/music.jpg"
+import Movies from "../Images/movies.jpg"
+import Gym from "../Images/gym.jpeg"
+import Cake from "../Images/cake.jpeg"
+import Nature from "../Images/nature.jpeg"
+import ProxyVideo from "../Images/Proxy.mp4"
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -25,7 +26,7 @@ function About () {
     <Row small>
       <Box smallBox> <SubTitle> Hey there! </SubTitle> 
       <SmallInfo Resp>
-      It's great to see you! My name is Yoana Churkina and I'm a 21-year-old student originally from Sofia, 
+      It's great to see you! My name is Yoana Churkina and I'm a 22-year-old student originally from Sofia, 
        Bulgaria – the capital city of the country. For the past three years, I've been living in Eindhoven, 
        the Netherlands, where I'm pursuing my studies. I'm currently in my third year at Fontys University of
        Applied Science in the Media Design Stream, and I absolutely love it! My goal for the future is to 
@@ -34,27 +35,53 @@ function About () {
       </SmallInfo>
       </Box>     
         <FancyPic>
-        <SpecialText>ABOUT <br /> ME</SpecialText>
-         {/* <img src={BigPic} alt="" style={{'width': '300px', 'height': '550px'}}/> */}
+        {/* <SpecialText>ABOUT <br /> ME</SpecialText> */}
+         <img src={BigPic} alt="" style={{ 'height': '500px', 'borderRadius': '100%'}}/>
         </FancyPic> 
      
    </Row>
-  <Column aboutCon>
-    <Title RespT>Get In Touch</Title>
-      <SubTitle>Contact</SubTitle>  
+  {/* <Column aboutCon>
+    {/* <Title RespT>Get In Touch</Title>
+      <SubTitle>Contact</SubTitle>   */}
       {/* <Row about><PhoneIcon></PhoneIcon> <SmallInfo Resp>+359 897 397 297</SmallInfo></Row>
       <Row about><EmailIcon></EmailIcon> <SmallInfo Resp>yonichrurkina@gmail.com</SmallInfo></Row>
       <Row about><LinkedInIcon></LinkedInIcon> <SmallInfo Resp>https://www.linkedin.com/in/yoana-churkina-9408a1234/</SmallInfo></Row> */}
-  </Column>
+  {/* </Column> */}
   {/* <NumerationExperiences></NumerationExperiences> */}
-  <Title>Feedback</Title>
+  {/* <Title>Feedback</Title> */}
 
       {/* <Carosel/> */}
     <Column>
-    <Title RespT>5 things I love</Title>
+    <Title RespT>7 intresting facts about me</Title>
+    <Row small homeA>
+    <iframe
+                width="350" 
+                height="250"
+                id="videoFrame"
+                src={ProxyVideo}
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                title="video"
+              />
+        <InfoBox>
+          <Title>Proxy</Title> 
+          <SmallInfo Resp>I am part of Proxy since the begging of my second year as the last year I am the 
+          vice-president of the study assosiation. I am managing and organizing different events.
+          </SmallInfo>
+        </InfoBox>
+      </Row>
       <Row small homeA>
-           {/* <img src={Music} alt="" style={{ 'height': '450px', mixBlendMode:'luminosity'}}/> */}
-      
+      <InfoBox>
+          <Title>Why UX/UI? </Title> 
+          <SmallInfo Resp>I was having the oportunity to introduce the UX/UI world in front of the first students
+          at Fontys University. Here is some small part of the inspiration talk.
+          </SmallInfo>
+        </InfoBox>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/8RitzmtguBk?si=ovTyuUZ3M77nNhh-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+      </Row>
+      <Row small homeA>
+           <img src={Music} alt="" style={{ 'height': '400px', mixBlendMode:'luminosity'}}/>
         <InfoBox>
           <Title>Music</Title> 
           <SmallInfo Resp>Since I was little I remember myself how I am dancing and singing on some music. The music is my heeling
@@ -70,10 +97,10 @@ function About () {
             on movies as well as sharing new and favorite songs.
           </SmallInfo>
         </InfoBox>
-         {/* <img src={Movies} alt="" style={{'width': '350px', 'height': '350px', mixBlendMode:'luminosity'}}/> */}
+         <img src={Movies} alt="" style={{'width': '350px', 'height': '350px', mixBlendMode:'luminosity'}}/>
       </Row>
       <Row small homeA>
-           {/* <img src={Gym} alt="" style={{'width': '350px', 'height': '450px',  mixBlendMode:'luminosity'}}/> */}
+           <img src={Gym} alt="" style={{'width': '350px', 'height': '400px',  mixBlendMode:'luminosity'}}/>
         
         <InfoBox>
           <Title>Gym</Title> 
@@ -91,10 +118,10 @@ function About () {
           </SmallInfo>
         </InfoBox>
         
-        {/* <img src={Cake} alt="" style={{'width': '180px', 'height': '300px', mixBlendMode:'luminosity'}}/>     */}
+        <img src={Cake} alt="" style={{'width': '250px', 'height': '350px', mixBlendMode:'luminosity'}}/>    
       </Row>
       <Row small homeA>
-          {/* <img src={Nature} alt=""className="cardImg" style={{mixBlendMode:'luminosity'}}/> */}
+          <img src={Nature} alt="" style={{'width': '500px', 'height': '290px',mixBlendMode:'luminosity'}}/>
   
        <InfoBox>
           <Title>Nature</Title> 

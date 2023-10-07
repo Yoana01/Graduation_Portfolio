@@ -24,9 +24,10 @@ import styled, {
    `;
   export const SmallInfo = styled.div`
       font-family: 'Poppins';
-      max-width: 550px;
+      // max-width:${(props) => props.sum ? '85%' : '550px'};
       width: 450px;
       padding-top:12px; 
+      color:${(props) => props.tags ? '#7c6aa6' : '#151322'};
       // padding-bottom:${(props) => props.learning ? '0px' : '16px'};
       font-size:${(props) => props.learningText ? '12px' : '16px'};
       ${props => props.sumText && css`

@@ -1,7 +1,13 @@
 /* body{
   font-family: "Poppins", sans-serif;
 } */
-
+a{
+ text-decoration: none; 
+}
+#logo{
+  width: 100px;
+  height: 100px;
+  }
 .down-arrow {
   position: absolute;
   top: calc(100vh - 80px);
@@ -41,3 +47,52 @@
   transition-property: transform,filter;
 }
 
+.cardImg1{
+  width: 560px;
+  height: 490px;
+  transition: .2s ease;
+  transition-property: transform,filter;
+}
+
+#nav-link{
+  text-decoration: none;
+  color:#151322;
+  font-size: 22px;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+}
+#nav-link:focus,
+#nav-link:hover {
+  color: #bdb2cf;
+}
+a.active{
+  color: green;
+}
+
+#nav-link:focus:after,
+#nav-link:hover:after {
+  width: 100%;
+  left: 0%;
+}
+#nav-link:hover:after {
+  width: 100%;
+  left: 0%;
+}
+#nav-link:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #bdb2cf;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
