@@ -226,7 +226,19 @@ export const CardBox = styled.div`
   `}
 `
 
-
+export const  Button = styled.button`
+   background: transparent;
+    border: none;
+    text-decoration: underline;
+    /* color: #E5989B; */
+    color: #7C6AA6;
+    font-size: 20px;
+   &:hover {
+      /* background-color: transparent;
+      border: 2px solid #E5989B; */
+      color:#bdb2cf;
+    }
+  `;
 
 export const FancyPic = styled.div`
     display: flex;

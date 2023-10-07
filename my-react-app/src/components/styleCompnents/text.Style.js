@@ -15,6 +15,11 @@ import styled, {
     ${props => props.CTitle && css`
        text-align: center;
     `}
+    ${props => props.ques && css`
+      font-family: 'Dekko';
+      margin:50px;
+      text-align:center
+    `}
     `;
   export const  SubTitle = styled.div`
     font-family: 'Poppins';
