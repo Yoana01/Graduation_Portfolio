@@ -5,8 +5,10 @@ import Home from './components/home';
 import About from './components/about';
 import Project01 from './components/Project01_Simac';
 import Project02 from './components/Project02_DDW';
+import Project03 from './components/Project03_CC';
 import Logo from './Images/Logo-site.png'
 import {NavigationBar, Row} from "./components/styleCompnents/container.Style";
+
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
                 <Route exact path='/about' element={< About />}></Route>
                 <Route exact path='/project01' element={< Project01 />}></Route>
                 <Route exact path='/project02' element={< Project02 />}></Route>
+                <Route exact path='/project03' element={< Project03 />}></Route>
         </Routes>
     </Router>
     </div>

@@ -26,8 +26,10 @@ function Project01 () {
             <Title>Onboarding Process at Simac</Title>
             <SubTitle>Year:</SubTitle>
             <SmallInfo>2023</SmallInfo>
+            <br />
             <SubTitle>Company:</SubTitle>
             <SmallInfo>Simac</SmallInfo>
+            <br />
             <SubTitle>Tools:</SubTitle>
             <SmallInfo>Agile | Design Thinking |DOT Framework |CMD methods | UX Research |UI | 
             Project Management</SmallInfo>

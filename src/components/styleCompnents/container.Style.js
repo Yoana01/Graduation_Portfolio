@@ -64,7 +64,7 @@ export const Row = styled.div `
     display: flex;
     gap:${(props) => props.homer ? '0px' : props.homrR1 ? '150px' : props.tag ? '16px' : '100px'};
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: ${(props) => props.homeA ? 'center' :  'flex-start'};
     /* justify-content: space-between; */
     justify-content: ${(props) => props.even ? 'space-evenly' :  'space-between'};;

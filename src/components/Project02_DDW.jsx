@@ -15,8 +15,10 @@ function Project02 () {
             <Title>Schoolyard 14</Title>
             <SubTitle>Year:</SubTitle>
             <SmallInfo>2023</SmallInfo>
+            <br />
             <SubTitle>Company:</SubTitle>
             <SmallInfo>The Cruyff Foundation</SmallInfo>
+            <br />
             <SubTitle>Tools:</SubTitle>
             <SmallInfo>Sustainable Development Goals | Design Thinking |DOT Framework/CMD methods | UX Research |UI</SmallInfo>
         </Column>

@@ -53,7 +53,11 @@ a{
   transition: .2s ease;
   transition-property: transform,filter;
 }
-
+.cardImg2{
+  height: 490px;
+  transition: .2s ease;
+  transition-property: transform,filter;
+}
 #nav-link{
   text-decoration: none;
   color:#151322;
