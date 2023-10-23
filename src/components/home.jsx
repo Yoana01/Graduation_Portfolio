@@ -18,7 +18,7 @@ function Home (){
    </QuoteBox>
    <div className="down-arrow"></div>
 {/* </Row> */}
-<Row  small homer homea even tag>
+<Row  small homer1 homea even >
     <CardBox>
     <img src={Project03} alt="" className="cardImg" />
  {/* </ImageContainer> */}
