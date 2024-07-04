@@ -11,7 +11,7 @@ gap:45px;
 padding: 16px;
 padding: 16px;
 border: none;
-color: #151322;
+color: #32620E;
 cursor: pointer;
 font-size: 22px;
 position: relative;
@@ -129,7 +129,7 @@ export const FeedbackBox = styled.div `
     background: rgb(245,245,245, 0.19);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     border-radius: 32px;
-    color:#151322;
+    color:##32620E;
     width: 500px;
     height: 300px;
     align-items: center;
@@ -153,7 +153,7 @@ export const CircleBox = styled.div`
   height: 42px;
   padding:4px;
   border-radius: 16px;
-  color:#151322;
+  color:#32620E;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -231,7 +231,7 @@ export const  Button = styled.button`
     border: none;
     text-decoration: underline;
     /* color: #E5989B; */
-    color: #7C6AA6;
+    color: #32620E;
     font-size: 20px;
    &:hover {
       /* background-color: transparent;

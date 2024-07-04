@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router,Routes, Route, NavLink  } from 'react-router-dom';
 import { GlobalStyle } from "./components/styleCompnents/global.Style";
 import Home from './components/home';
 import About from './components/about';
@@ -16,10 +16,10 @@ function App() {
       <GlobalStyle />
       <Router>
         <Row>
-        <img src={Logo} id='logo' />
+        <img src={Logo} id='logo' alt="website logo" />
         <NavigationBar>
-                <Link to="/" id="nav-link" className={({ isActive }) => (isActive ? 'active' : '')}>Home</Link>
-                <Link to="/about" id="nav-link" className={({ isActive }) => (isActive ? 'active' : '')}>About Me</Link>
+                <NavLink  to="/" id="nav-link">Home</NavLink >
+                <NavLink  to="/about" id="nav-link">About Me</NavLink >
       </NavigationBar>
         </Row>
        

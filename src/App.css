@@ -1,6 +1,3 @@
-/* body{
-  font-family: "Poppins", sans-serif;
-} */
 a{
  text-decoration: none; 
 }
@@ -41,14 +38,14 @@ a{
   }
 }
 .cardImg{
-  width: 480px;
+  width: 450px;
   height: 490px;
   transition: .2s ease;
   transition-property: transform,filter;
 }
 
 .cardImg1{
-  width: 560px;
+  width: 450px;
   height: 490px;
   transition: .2s ease;
   transition-property: transform,filter;
@@ -72,7 +69,7 @@ a{
 }
 #nav-link:focus,
 #nav-link:hover {
-  color: #bdb2cf;
+  color: #32620E;
 }
 a.active{
   color: green;
@@ -95,7 +92,7 @@ a.active{
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: #bdb2cf;
+  background-color: #32620E;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
