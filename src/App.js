@@ -18,8 +18,8 @@ function App() {
         <Row>
         <img src={Logo} id='logo' alt="website logo" />
         <NavigationBar>
-                <NavLink  to="/" id="nav-link">Home</NavLink >
-                <NavLink  to="/about" id="nav-link">About Me</NavLink >
+                <NavLink  to="/" id="nav-link">Home</NavLink>
+                <NavLink  to="/about" id="nav-link">About Me</NavLink>
       </NavigationBar>
         </Row>
        
