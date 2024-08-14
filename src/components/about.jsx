@@ -29,19 +29,19 @@ function About() {
         <Row small>
           <Box smallBox>
             {" "}
-            <SubTitle> Hey there! </SubTitle>
+            <SubTitle> Hey and welcome! </SubTitle>
             <SmallInfo Resp>
-              Hello and welcome! <br />
-               I'm Yoana Churkina, a recent graduate from
-              Fontys University of Applied Sciences, specializing in Media
-              Design. Originally from Sofia, Bulgaria, I’ve spent the past four
-              years in Eindhoven, the Netherlands, immersing myself in the
-              vibrant world of design and technology. <br />Passionate about creating
-              intuitive and impactful digital experiences, I aim to leave my
-              unique mark on every website or app I develop. My goal is to
-              design and develop solutions that not only meet user needs but
-              also simplify and enhance everyday life. <br />Looking forward to
-              connecting and sharing ideas!
+              I'm Yoana Churkina, a recent graduate from Fontys University of
+              Applied Sciences, specializing in Media Design. Originally from
+              Sofia, Bulgaria, I’ve spent the past four years in Eindhoven, the
+              Netherlands, immersing myself in the vibrant world of design and
+              technology. <br />
+              Passionate about creating intuitive and impactful digital
+              experiences, I aim to leave my unique mark on every website or app
+              I develop. My goal is to design and develop solutions that not
+              only meet user needs but also simplify and enhance everyday life.{" "}
+              <br />
+              Looking forward to connecting and sharing ideas!
             </SmallInfo>
           </Box>
           <FancyPic>
@@ -80,8 +80,8 @@ function About() {
             <InfoBox>
               <Title>Proxy</Title>
               <SmallInfo Resp>
-                I am part of Proxy since the begging of my second year as the
-                last year I am the vice-president of the study assosiation. I am
+                I was part of Proxy since the begging of my second year as the
+                last year I am the vice-president of the study assosiation. I was
                 managing and organizing different events.
               </SmallInfo>
             </InfoBox>
