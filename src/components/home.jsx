@@ -20,11 +20,10 @@ function Home() {
         {/* <Row small homer homea even > */}
         <QuoteBox small>
           <Zoom duration={1500}>
-            {" "}
+   
             My signature touch should be evident in every website or app as
             creating, designing and developing experiences that
             <span style={{ color: "#32620E", fontWeight: "700" }}>
-              {" "}
               simplify people's lives.
             </span>
           </Zoom>
