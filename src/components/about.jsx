@@ -31,18 +31,17 @@ function About() {
             {" "}
             <SubTitle> Hey there! </SubTitle>
             <SmallInfo Resp>
-              It's great to see you! My name is Yoana Churkina and I'm a
-              22-year-old student originally from Sofia, Bulgaria – the capital
-              city of the country. For the past four years, I've been living in
-              Eindhoven, the Netherlands, where I'm pursuing my studies. This
-              year, I graduated at Fontys University of Applied Science in the
-              Media Design Stream, and I absolutely love it! I am going to start
-              my master degree in Utrecht as the stream is regarding Data Driven
-              Design <br />
-              My goal for the future is to become a user experience designer
-              with preference for coding – it is an exciting and dynamic field
-              with plenty of opportunities to create innovative and
-              user-friendly designs.
+              Hello and welcome! <br />
+               I'm Yoana Churkina, a recent graduate from
+              Fontys University of Applied Sciences, specializing in Media
+              Design. Originally from Sofia, Bulgaria, I’ve spent the past four
+              years in Eindhoven, the Netherlands, immersing myself in the
+              vibrant world of design and technology. <br />Passionate about creating
+              intuitive and impactful digital experiences, I aim to leave my
+              unique mark on every website or app I develop. My goal is to
+              design and develop solutions that not only meet user needs but
+              also simplify and enhance everyday life. <br />Looking forward to
+              connecting and sharing ideas!
             </SmallInfo>
           </Box>
           <FancyPic>
