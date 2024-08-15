@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { Button, Column, Row,FeedbackBox, InfoBox } from "./styleCompnents/container.Style"
-import { Title, SubTitle, SmallInfo, SpecialText } from "./styleCompnents/text.Style"
+import { Button, Column, Row } from "./styleCompnents/container.Style"
+import { Title, SubTitle, SmallInfo } from "./styleCompnents/text.Style"
 import Simac01 from "../Images/A4 - 2.png"
 import Management from "../Images/Monday.png"
 import Map from "../Images/CustomerJourney Map.jpg"

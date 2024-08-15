@@ -7,9 +7,10 @@ import {
   QuoteBox,
   CardBox,
   Button,
+  ImageContainer,
 } from "./styleCompnents/container.Style";
 import { SmallInfo, SubTitle } from "./styleCompnents/text.Style";
-import Project03 from "../Images/Eindhoven.jpg";
+import Project03 from "../Images/WedecodeIT.png"
 import Project04 from "../Images/Logo.png";
 import Project05 from "../Images/Copenhagen.png";
 
@@ -32,19 +33,20 @@ function Home() {
 
         {/* </Row> */}
         <Row small homer1 homea even>
-          {/* <CardBox>
-    <img src={Project03} alt="" className="cardImg" />
- {/* </ImageContainer> */}
-          {/* <br />
- <SubTitle>Dutch Design Charrette</SubTitle>
- <SmallInfo tags>UX Research | UX Design | Sustainable Development Goals</SmallInfo>
- <Link to={"/project02"}> <Button>Find more</Button></Link> */}
-          {/* </CardBox>  */}
           <CardBox>
-            {/* <ImageContainer> */}
+            <ImageContainer>
+    <img src={Project03} alt="" className="cardImg" />
+ </ImageContainer>
+          <br />
+ <SubTitle>WedecodeIT</SubTitle>
+ <SmallInfo tags>UX Research | UX Design | Start-Up</SmallInfo>
+ <Link to={"/project02"}> <Button>Find more</Button></Link> 
+          </CardBox> 
+          <CardBox>
+             <ImageContainer>
             <img src={Project04} alt="" className="cardImg" />
             <br />
-            {/* </ImageContainer> */}
+            </ImageContainer> 
             <SubTitle>Onboarding Simac</SubTitle>
             <SmallInfo tags>
               UX Research | UX Design | Project Management | Onboarding{" "}
@@ -55,9 +57,10 @@ function Home() {
             </Link>
           </CardBox>
           <CardBox>
+          <ImageContainer> 
             <img src={Project05} alt="" className="cardImg2" />
-            {/* </ImageContainer> */}
-            <br />
+            </ImageContainer> 
+            <br /> <br />
             <SubTitle>Copenhagen Design Charrette</SubTitle>
             <SmallInfo tags>
               UX Research | UX Design | Urban Mining | Sustainable Development

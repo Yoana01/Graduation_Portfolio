@@ -4,7 +4,7 @@ import { GlobalStyle } from "./components/styleCompnents/global.Style";
 import Home from './components/home';
 import About from './components/about';
 import Project01 from './components/Project01_Simac';
-import Project02 from './components/Project02_DDW';
+import Project02 from './components/Project04_StartUp';
 import Project03 from './components/Project03_CC';
 import Logo from './Images/Logo-site.png'
 import {NavigationBar, Row} from "./components/styleCompnents/container.Style";
