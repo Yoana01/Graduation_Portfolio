@@ -26,6 +26,10 @@ import styled, {
     font-size: 20px;
     font-weight: 600;
     // padding:16px;
+      @media (max-width: 768px) {
+     ${props => props.ResSub && css`
+     text-align:center
+    `}}
    `;
   export const SmallInfo = styled.div`
       font-family: 'Poppins';
@@ -50,6 +54,7 @@ import styled, {
     @media (max-width: 768px) {
       max-width: 350px;
        width:auto;
+       text-align:center;
        height: 100%;}
     `}
   `

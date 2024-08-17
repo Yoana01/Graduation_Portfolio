@@ -1,13 +1,7 @@
 // About.js
 import React from "react";
-import {
-  Box,
-  Column,
-  Row,
-  InfoBox,
-  FancyPic,
-} from "./styleCompnents/container.Style";
-import { Title, SubTitle, SmallInfo } from "./styleCompnents/text.Style";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 import BigPic from "../Images/Me.jpg";
 import Music from "../Images/music.jpg";
 import Movies from "../Images/movies.jpg";
@@ -18,180 +12,350 @@ import ProxyVideo from "../Images/Proxy.mp4";
 // import Fade from 'react-reveal/Fade';
 // import Zoom from 'react-reveal/Zoom';
 // import Slide from 'react-reveal/Slide';
-// import Carosel from './Carosel'
-// import NumerationExperiences from "./Numeration_Experiences"
-// import ScrollToTopButton from "./ScrollToTop"
 
 function About() {
   return (
     <div>
-      <Column>
-        <Row small>
-          <Box smallBox>
-            {" "}
-            <SubTitle> Hey and welcome! </SubTitle>
-            <SmallInfo Resp>
-              I'm Yoana Churkina, a recent graduate from Fontys University of
-              Applied Sciences, specializing in Media Design. Originally from
-              Sofia, Bulgaria, I’ve spent the past four years in Eindhoven, the
-              Netherlands, immersing myself in the vibrant world of design and
-              technology. <br />
-              Passionate about creating intuitive and impactful digital
-              experiences, I aim to leave my unique mark on every website or app
-              I develop. My goal is to design and develop solutions that not
-              only meet user needs but also simplify and enhance everyday life.{" "}
-              <br />
-              Looking forward to connecting and sharing ideas!
-            </SmallInfo>
-          </Box>
-          <FancyPic>
-            {/* <SpecialText>ABOUT <br /> ME</SpecialText> */}
-            <img
-              src={BigPic}
-              alt=""
-              style={{ height: "500px", borderRadius: "8px" }}
-            />
-          </FancyPic>
-        </Row>
-        {/* <Column aboutCon>
-    {/* <Title RespT>Get In Touch</Title>
-      <SubTitle>Contact</SubTitle>   */}
-        {/* <Row about><PhoneIcon></PhoneIcon> <SmallInfo Resp>+359 897 397 297</SmallInfo></Row>
-      <Row about><EmailIcon></EmailIcon> <SmallInfo Resp>yonichrurkina@gmail.com</SmallInfo></Row>
-      <Row about><LinkedInIcon></LinkedInIcon> <SmallInfo Resp>https://www.linkedin.com/in/yoana-churkina-9408a1234/</SmallInfo></Row> */}
-        {/* </Column> */}
-        {/* <NumerationExperiences></NumerationExperiences> */}
-        {/* <Title>Feedback</Title> */}
-
-        {/* <Carosel/> */}
-        <Column>
-          <Title RespT>7 intresting facts about me</Title>
-          <Row small homeA>
-            <iframe
-              width="350"
-              height="250"
-              id="videoFrame"
-              src={ProxyVideo}
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-              title="video"
-              border-radius="8px"
-            />
-            <InfoBox>
-              <Title>Proxy</Title>
-              <SmallInfo Resp>
-                I was part of Proxy since the begging of my second year as the
-                last year I am the vice-president of the study assosiation. I was
-                managing and organizing different events.
-              </SmallInfo>
-            </InfoBox>
-          </Row>
-          <Row small homeA>
-            <InfoBox>
-              <Title>Why UX/UI? </Title>
-              <SmallInfo Resp>
-                I was having the oportunity to introduce the UX/UI world in
-                front of the first students at Fontys University. Here is some
-                small part of the inspiration talk.
-              </SmallInfo>
-            </InfoBox>
-            <iframe
-              width="500"
-              height="315"
-              src="https://www.youtube.com/embed/8RitzmtguBk?si=ovTyuUZ3M77nNhh-"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </Row>
-          <Row small homeA>
-            <img
-              src={Music}
-              alt=""
-              style={{
-                height: "400px",
-                borderRadius: "8px",
-              }}
-            />
-            <InfoBox>
-              <Title>Music</Title>
-              <SmallInfo Resp>
-                Since I was little I remember myself how I am dancing and
-                singing on some music. The music is my heeling peel because she
-                is always there to get out me from my darkest periods.
-              </SmallInfo>
-            </InfoBox>
-          </Row>
-          <Row small homeA>
-            <InfoBox>
-              <Title>Movies & TV shows</Title>
-              <SmallInfo Resp>
-                In my free days and especially when it is cold outside I love
-                watching movies or TV series.Moreover, I even more interested in
-                the actors lifestyle and more how they shoot it. Even I created
-                an Instagram page where I did reviews on movies as well as
-                sharing new and favorite songs.
-              </SmallInfo>
-            </InfoBox>
-            <img
-              src={Movies}
-              alt=""
-              style={{ width: "350px", height: "350px", borderRadius: "8px" }}
-            />
-          </Row>
-          <Row small homeA>
-            <img
-              src={Gym}
-              alt=""
-              style={{ width: "300px", height: "400px", borderRadius: "8px" }}
-            />
-
-            <InfoBox>
-              <Title>Gym</Title>
-              <SmallInfo Resp>
-                Since I came in the Netherlands, I started going to the gym.
-                This helps me to stay fit and to being motivated and remove the
-                negative energy.
-              </SmallInfo>
-            </InfoBox>
-          </Row>
-          <Row small homeA>
-            <InfoBox>
-              <Title>Cooking sweet things</Title>
-              <SmallInfo Resp>
-                The first thing that I have learned to cook was a cake. From
-                that day on I love cooking cakes, muffinins to my beloved ones.
-              </SmallInfo>
-            </InfoBox>
-
-            <img
-              src={Cake}
-              alt=""
-              style={{ width: "200px", height: "350px", borderRadius: "8px" }}
-            />
-          </Row>
-          <Row small homeA>
-            <img
-              src={Nature}
-              alt=""
-              style={{ width: "500px", height: "290px", borderRadius: "8px" }}
-            />
-
-            <InfoBox>
-              <Title>Nature</Title>
-              <SmallInfo Resp>
-                As every person I need some space where I need to recharge
-                myself and be with my toughts. The place that makes me feel like
-                this is the nature. As I like being in my home country, Bulgaria
-                since we have a lot of mountains, but also I open and for place
-                in a mysterious country.
-              </SmallInfo>
-            </InfoBox>
-          </Row>
-        </Column>
-        {/* <ScrollToTopButton></ScrollToTopButton> */}
-      </Column>
+      <Grid
+        container
+        containerSpacing={{ xs: 1, md: 2 }}
+        sx={{ marginTop: "150px" }}
+        // justifyContent={"center"}
+        alignItems={"center"}
+        justifyContent={"space-around"}
+        alignContent={"center"}
+      >
+        <Grid item xs={12} md={5}>
+          <Typography
+            variant="h3"
+            component="h3"
+            textAlign={"center"}
+            sx={{ marginBottom: "1.5rem", paddingLeft: "1rem" }}
+          >
+            Hey and welcome!
+          </Typography>
+          <Typography
+            fontSize={"20px"}
+            component="p"
+            textAlign={"center"}
+            sx={{ margin: "1.5rem" }}
+          >
+            I'm Yoana Churkina, a recent graduate from Fontys University of
+            Applied Sciences, specializing in Media Design. Originally from
+            Sofia, Bulgaria, I’ve spent the past four years in Eindhoven, the
+            Netherlands, immersing myself in the vibrant world of design and
+            technology. <br />
+            Passionate about creating intuitive and impactful digital
+            experiences, I aim to leave my unique mark on every website or app I
+            develop. My goal is to design and develop solutions that not only
+            meet user needs but also simplify and enhance everyday life. <br />
+            Looking forward to connecting and sharing ideas!
+          </Typography>
+        </Grid>
+        <Grid item xs={12} md={4} display="flex">
+          <img
+            src={BigPic}
+            alt="Images"
+            style={{ height: "400px", borderRadius: "8px", margin: "auto" }}
+          />
+        </Grid>
+      </Grid>
+      <Typography
+        variant="h3"
+        component="h3"
+        textAlign={"center"}
+        color={"#32620E"}
+        sx={{ margin: "3.5rem" }}
+      >
+        7 intresting facts about me
+      </Typography>
+      <Grid
+        container
+        containerSpacing={{ xs: 1, md: 2 }}
+        sx={{ marginTop: "150px" }}
+        alignItems={"center"}
+        justifyContent={"space-around"}
+        alignContent={"center"}
+      >
+        {" "}
+        <Grid item xs={12} md={4} display="flex" justifyContent={"center"}>
+          <iframe
+            width="350"
+            height="250"
+            id="videoFrame"
+            src={ProxyVideo}
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            title="video"
+            border-radius="8px"
+          />
+        </Grid>
+        <Grid item xs={12} md={5}>
+          <Typography
+            variant="h4"
+            component="h4"
+            textAlign={"center"}
+            color="#ab7f72"
+            sx={{ marginBottom: "1.5rem", paddingLeft: "1rem" }}
+          >
+            Vice President, Study Association - Proxy
+          </Typography>
+          <Typography
+            fontSize={"20px"}
+            component="p"
+            textAlign={"center"}
+            sx={{ margin: "1.5rem" }}
+          >
+            Since the beginning of my second year, I had been an integral part
+            of Proxy, a study association where in the end, I was proudly serve
+            as Vice President. During this time, I had taken on a leadership
+            role, managing and organizing a wide range of events that have
+            enriched the student experience. My involvement has allowed me to
+            develop strong organizational and team management skills,
+            contributing to the growth and success of the association.
+          </Typography>
+        </Grid>
+      </Grid>
+      <Grid
+        container
+        containerSpacing={{ xs: 1, md: 2 }}
+        sx={{ marginTop: "150px" }}
+        // justifyContent={"center"}
+        alignItems={"center"}
+        justifyContent={"space-around"}
+        alignContent={"center"}
+      >
+        <Grid item xs={12} md={5}>
+          <Typography
+            variant="h4"
+            component="h4"
+            textAlign={"center"}
+            color="#ab7f72"
+            sx={{ marginBottom: "1.5rem", paddingLeft: "1rem" }}
+          >
+            Inspirational Speaker, UX/UI Introduction - Fontys University
+          </Typography>
+          <Typography
+            fontSize={"20px"}
+            component="p"
+            textAlign={"center"}
+            sx={{ margin: "1.5rem" }}
+          >
+            I had the privilege of introducing the world of UX/UI design to
+            first-year students at Fontys University. During this inspiring
+            session, I shared insights and sparked curiosity about the
+            possibilities within this dynamic field. Below is a glimpse of the
+            talk that motivated the next generation of designers.
+          </Typography>
+        </Grid>
+        <Grid item xs={12} md={4} display="flex" justifyContent={"center"}>
+          <iframe
+            width="500"
+            height="315"
+            src="https://www.youtube.com/embed/8RitzmtguBk?si=ovTyuUZ3M77nNhh-"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </Grid>
+      </Grid>
+      <Grid
+        container
+        containerSpacing={{ xs: 1, md: 2 }}
+        sx={{ marginTop: "150px" }}
+        alignItems={"center"}
+        justifyContent={"space-around"}
+        alignContent={"center"}
+      >
+        {" "}
+        <Grid item xs={12} md={4} display="flex" justifyContent={"center"}>
+          <img
+            src={Music}
+            alt=""
+            style={{
+              height: "400px",
+              borderRadius: "8px",
+            }}
+          />
+        </Grid>
+        <Grid item xs={12} md={5}>
+          <Typography
+            variant="h4"
+            component="h4"
+            textAlign={"center"}
+            color="#ab7f72"
+            sx={{ marginBottom: "1.5rem", paddingLeft: "1rem" }}
+          >
+            Music
+          </Typography>
+          <Typography
+            fontSize={"20px"}
+            component="p"
+            textAlign={"center"}
+            sx={{ margin: "1.5rem" }}
+          >
+            Since childhood, I've always found myself dancing and singing to
+            music. Music has been my healing balm, a constant presence that
+            lifts me out of my darkest moments.
+          </Typography>
+        </Grid>
+      </Grid>
+      <Grid
+        container
+        containerSpacing={{ xs: 1, md: 2 }}
+        sx={{ marginTop: "150px" }}
+        alignItems={"center"}
+        justifyContent={"space-around"}
+        alignContent={"center"}
+      >
+        <Grid item xs={12} md={5}>
+          <Typography
+            variant="h4"
+            component="h4"
+            textAlign={"center"}
+            color="#ab7f72"
+            sx={{ marginBottom: "1.5rem", paddingLeft: "1rem" }}
+          >
+            Movies & TV shows
+          </Typography>
+          <Typography
+            fontSize={"20px"}
+            component="p"
+            textAlign={"center"}
+            sx={{ margin: "1.5rem" }}
+          >
+            On my days off, especially when it's cold outside, I love diving
+            into movies and TV series. I'm fascinated not only by the stories
+            but also by the actors' lifestyles and the behind-the-scenes process
+            of filmmaking. My passion led me to create an Instagram page where I
+            review movies and share my favorite songs, as well as the latest
+            tracks that catch my ear.
+          </Typography>
+        </Grid>
+        <Grid item xs={12} md={4} display="flex" justifyContent={"center"}>
+          <img
+            src={Movies}
+            alt=""
+            style={{ width: "350px", height: "350px", borderRadius: "8px" }}
+          />
+        </Grid>
+      </Grid>
+      <Grid
+        container
+        containerSpacing={{ xs: 1, md: 2 }}
+        sx={{ marginTop: "150px" }}
+        alignItems={"center"}
+        justifyContent={"space-around"}
+        alignContent={"center"}
+      >
+        {" "}
+        <Grid item xs={12} md={4} display="flex" justifyContent={"center"}>
+          <img
+            src={Gym}
+            alt=""
+            style={{ width: "300px", height: "400px", borderRadius: "8px" }}
+          />
+        </Grid>
+        <Grid item xs={12} md={5}>
+          <Typography
+            variant="h4"
+            component="h4"
+            textAlign={"center"}
+            color="#ab7f72"
+            sx={{ marginBottom: "1.5rem", paddingLeft: "1rem" }}
+          >
+            Gym
+          </Typography>
+          <Typography
+            fontSize={"20px"}
+            component="p"
+            textAlign={"center"}
+            sx={{ margin: "1.5rem" }}
+          >
+            Since moving to the Netherlands, I've made going to the gym a
+            regular part of my routine. It helps me stay fit, stay motivated,
+            and channel negative energy into something positive.
+          </Typography>
+        </Grid>
+      </Grid>
+      <Grid
+        container
+        containerSpacing={{ xs: 1, md: 2 }}
+        sx={{ marginTop: "150px" }}
+        alignItems={"center"}
+        justifyContent={"space-around"}
+        alignContent={"center"}
+      >
+        <Grid item xs={12} md={5}>
+          <Typography
+            variant="h4"
+            component="h4"
+            textAlign={"center"}
+            color="#ab7f72"
+            sx={{ marginBottom: "1.5rem", paddingLeft: "1rem" }}
+          >
+            Cooking sweet things
+          </Typography>
+          <Typography
+            fontSize={"20px"}
+            component="p"
+            textAlign={"center"}
+            sx={{ margin: "1.5rem" }}
+          >
+            The first thing I ever learned to cook was a cake, and from that
+            moment on, I fell in love with baking. Now, I enjoy creating cakes
+            and muffins for my loved ones, sharing my passion with those who
+            matter most.
+          </Typography>
+        </Grid>
+        <Grid item xs={12} md={4} display="flex" justifyContent={"center"}>
+          <img
+            src={Cake}
+            alt=""
+            style={{ width: "200px", height: "350px", borderRadius: "8px" }}
+          />
+        </Grid>
+      </Grid>
+      <Grid
+        container
+        containerSpacing={{ xs: 1, md: 2 }}
+        sx={{ marginTop: "150px" }}
+        alignItems={"center"}
+        justifyContent={"space-around"}
+        alignContent={"center"}
+      >
+        {" "}
+        <Grid item xs={12} md={4} display="flex" justifyContent={"center"}>
+          <img
+            src={Nature}
+            alt=""
+            style={{ width: "500px", height: "290px", borderRadius: "8px" }}
+          />
+        </Grid>
+        <Grid item xs={12} md={5}>
+          <Typography
+            variant="h4"
+            component="h4"
+            textAlign={"center"}
+            color="#ab7f72"
+            sx={{ marginBottom: "1.5rem", paddingLeft: "1rem" }}
+          >
+            Nature
+          </Typography>
+          <Typography
+            fontSize={"20px"}
+            component="p"
+            textAlign={"center"}
+            sx={{ margin: "1.5rem" }}
+          >
+            Like everyone, I need a space to recharge and reflect, and for me,
+            that place is nature. I find peace in the mountains of my home
+            country, Bulgaria, but I'm also drawn to exploring the untouched
+            beauty of mysterious, far-off lands.
+          </Typography>
+        </Grid>
+      </Grid>
     </div>
   );
 }

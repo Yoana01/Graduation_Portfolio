@@ -49,7 +49,7 @@ export const Column = styled.div `
   `}
   ${props => props.aboutcon && css`
   gap:0px;
-  align-items: flex-start;
+
     align-content: space-around;
     @media (max-width: 768px) {
     width: 100%;
@@ -73,8 +73,8 @@ export const Row = styled.div `
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      gap:24px;
-      justify-content: center;
+      // gap:24px;
+      justify-content: space-between;
       align-items: center;
       /* padding:16px; */
       /* max-width:380px;
@@ -115,13 +115,18 @@ export const InfoBox = styled.div `
 `
 
 export const Box = styled.div `
-    width:524px;
-    height:250px;
+    // display:flex;
+    // justify-content: space-between;
+    // align-items: center;
     padding:32px;
     ${props => props.smallbox && css`
     @media (max-width: 768px) {
+    display:flex;
+        align-items:center;
         height: 100%;
-        width:300px;
+        // width:300px;
+        display:flex;
+        text-align:center;
     }
   `}
 `
@@ -176,7 +181,7 @@ text-align: center;
 export const QuoteBox = styled.div`
     font-family: 'Dekko';
     // width: 500px;
-    height: 100%;
+   
     padding: 16px;
     font-size: 56px;
     // line-height: 46px;
@@ -243,5 +248,8 @@ export const  Button = styled.button`
 export const FancyPic = styled.div`
     display: flex;
     flex-direction: column;  
-  //  margin-top:48px;
+      ${props => props.small && css`
+    @media (max-width: 768px) {
+      
+      `}}
 `
