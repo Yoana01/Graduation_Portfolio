@@ -1,14 +1,16 @@
 
 // About.js
 import React from 'react';
-import { Box, Column, Row,FeedbackBox, InfoBox, FancyPic, QuoteBox } from "./styleCompnents/container.Style"
-import { Title, SubTitle, SmallInfo, SpecialText } from "./styleCompnents/text.Style"
+import {  Column, Row } from "./styleCompnents/container.Style"
+import { Title, SubTitle, SmallInfo } from "./styleCompnents/text.Style"
 import GroupPic from "../Images/GroupPhoto.jpg"
 import Rules from "../Images/Rules.jpg"
+import NavBar from './Navbar';
 
 
 function Project02 () {
     return <div>
+        <NavBar></NavBar>
         <Row homeA even>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/DR2SblG4_mk?si=WkEtCeyfhavDmv2X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <Column nogap>

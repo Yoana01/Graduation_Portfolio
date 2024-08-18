@@ -9,6 +9,7 @@ import Gym from "../Images/gym.jpeg";
 import Cake from "../Images/cake.jpeg";
 import Nature from "../Images/nature.jpeg";
 import ProxyVideo from "../Images/Proxy.mp4";
+import NavBar from "./Navbar";
 // import Fade from 'react-reveal/Fade';
 // import Zoom from 'react-reveal/Zoom';
 // import Slide from 'react-reveal/Slide';
@@ -16,6 +17,7 @@ import ProxyVideo from "../Images/Proxy.mp4";
 function About() {
   return (
     <div>
+      <NavBar></NavBar>
       <Grid
         container
         containerSpacing={{ xs: 1, md: 2 }}
@@ -30,6 +32,7 @@ function About() {
             variant="h3"
             component="h3"
             textAlign={"center"}
+            color={"#ab7f72"}
             sx={{ marginBottom: "1.5rem", paddingLeft: "1rem" }}
           >
             Hey and welcome!

@@ -4,10 +4,12 @@ import { Column, Row, Button } from "./styleCompnents/container.Style";
 import { Title, SubTitle, SmallInfo } from "./styleCompnents/text.Style";
 import GroupPic from "../Images/Group.jpg";
 import Persona from "../Images/Persona.png";
+import NavBar from './Navbar';
 
 function Project03() {
   return (
     <div>
+      <NavBar></NavBar>
       <Row homeA even>
         <iframe
           width="560"

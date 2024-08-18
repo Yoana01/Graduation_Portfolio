@@ -5,10 +5,33 @@ a{
   width: 100px;
   height: 100px;
   }
+
+  .navbarBigScreen 
+a.active {
+  color:#32620E;
+}
+
+.navbarSmallScreen,
+.navbarBigScreen  a {
+  color: #242424;
+}
+.navbarSmallScreen  
+a.active {
+  color:#32620E;
+}
+.navitem{
+  max-width:148px;
+  font-size: 20px;
+}
+.posarrow {
+  position: relative;
+  margin-bottom: 40px;
+}
 .down-arrow {
   position: absolute;
-  top: calc(100vh - 80px);
-  left: calc(50% - 14px);
+  margin: auto;
+  /* top: calc(100vh - 80px);
+  left: calc(50% - 14px); */
   border-radius: 2px;
   animation: jumpInfinite 1.5s infinite;
 }
@@ -37,6 +60,7 @@ a{
     margin-top: 0;
   }
 }
+
 .cardImg{
   width: 450px;
   height: 490px;

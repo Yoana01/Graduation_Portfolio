@@ -10,10 +10,12 @@ import { Title, SubTitle, SmallInfo } from "./styleCompnents/text.Style";
 import Project03 from "../Images/WedecodeIT.png";
 import Brainstorming from "../Images/brainstorming.png";
 import Brand from "../Images/brand.png";
+import NavBar from './Navbar';
 
 function Project04() {
   return (
     <div>
+      <NavBar></NavBar>
       <Row homeA even>
         <img src={Project03} alt="" className="cardImg" />
         <Column nogap>

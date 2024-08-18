@@ -9,7 +9,7 @@ import Empathy from "../Images/Empatymap.png"
 import Affinity from "../Images/SIMAC Affinity map 1.png"
 import Project from "../Images/A4 - 2.png"
 import Group from "../Images/grouppic.jpg"
-
+import NavBar from './Navbar';
 
 
 // import Zoom from 'react-reveal/Zoom';
@@ -20,6 +20,7 @@ import Group from "../Images/grouppic.jpg"
   
 function Project01 () {
     return <div>
+        <NavBar></NavBar>
         <Row homeA even>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/4isAugIrrt8?si=4ltSQCiLx-YfrY9j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <Column nogap>

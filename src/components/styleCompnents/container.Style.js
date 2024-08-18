@@ -189,7 +189,7 @@ export const QuoteBox = styled.div`
     flex-direction:column;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    height: 100vh;
+    height: 80vh;
     text-align:center;
     ${props => props.small && css`
     @media (max-width: 768px) {
