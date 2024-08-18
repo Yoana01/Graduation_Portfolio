@@ -25,6 +25,7 @@ import styled, {
     font-family: 'Poppins';
     font-size: 20px;
     font-weight: 600;
+    color: "#ab7f72";
     // padding:16px;
       @media (max-width: 768px) {
      ${props => props.ResSub && css`

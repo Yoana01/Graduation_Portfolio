@@ -82,7 +82,7 @@ function NavBar() {
               onClick={toggleDrawer(true)}
               sx={{ minWidth: "30px", p: "4px" }}
             >
-              <MenuIcon sx={{backgroundColor: "#32620E"}}  />
+              <MenuIcon />
             </Button>
             <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
               <Box
